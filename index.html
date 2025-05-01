@@ -6,16 +6,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="cafe.png" type="image/x-icon">
-    <title>Blog Coffee</title>
+    <title>CoffeeBlog</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__nav">
-            <h1 class="no-margin"> <span>Coffee</span> Blog</h1>
-            <div class="header__nav-links">
-                <a href="#">Us</a>
-                <a href="#">Courses</a>
-                <a href="#">Contact</a>
+        <div class="container">
+            <div class="header__nav">
+                <a href="#">
+                    <h1 class="no-margin"> <span>Coffee</span>Blog</h1>
+                </a>
+                <nav class="">
+                    <a href="#" class="header__nav-links">Aboute</a>
+                    <a href="#" class="header__nav-links">Courses</a>
+                    <a href="#" class="header__nav-links">Contact</a>
+                </nav>
             </div>
         </div>
         <div class="header__text text-center">
@@ -23,5 +27,19 @@
             <p class="no-margin">Learn with experts</p>
         </div>
     </header>
+    <div class="container main-content">
+        <main class="blog">
+            <h3>Our Coffee</h3>
+            <article class="article">
+                <img src="/img/blog1.jpg" alt="article_1">
+                <h4>Article 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga aliquam magni exercitationem! Nesciunt expedita distinctio voluptate id quisquam iusto minima eveniet dolore autem necessitatibus voluptas, ducimus quis sint ab!</p>
+                <button>View</button>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Our courses & workshop</h3>
+        </aside>
+    </div>
 </body>
 </html>
