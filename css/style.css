@@ -3,7 +3,7 @@
     --paragraphFont: 'Open Sans', sans-serif;
     --primary: #784D3C;
     --white: #ffff;
-    --black: #0000;
+    --black: #000;
 }
 html{
     box-sizing: border-box;
@@ -20,8 +20,7 @@ body{
 
 /* Globales */
 .container{
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 a{
@@ -49,7 +48,6 @@ img{
 }
 
 /* Utilidades */
-
 .no-padding{
     padding: 0;
 }
@@ -61,10 +59,9 @@ img{
 }
 
 /* Header */
-
 .header{
     background-image: url(../img/banner.jpg);
-    height: 60rem;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -80,7 +77,7 @@ img{
 .header__nav span{
     font-weight: 500;
 }
-.header__nav nav{
+.navigation{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -92,16 +89,68 @@ img{
 }
 .header__text{
     color: var(--white);
-    margin-top: 7rem;
+    margin-top: 15rem;
     padding-inline: 2rem;
 }
-.main-content{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 4rem;
-}
 
-@media (min-width: 768px) {
+/* Blog */
+.article{
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.article__title{
+    margin: 10px 0;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    border-bottom: var(--black) 1px;
+    font-weight: 700;
+}
+.btn--primary{
+    background: var(--black);
+}
+.btn--secundary{
+    background-color: var(--primary);
+}
+/* Courses */
+.courses{
+    border: #784d3c3b solid 1px;
+    padding: 20px;
+}
+.widget-course{
+    list-style-type: none;
+    border: 1px #784D3C;
+}
+.widget-course h4{
+    margin: 0;
+}
+.widget-course span{
+    margin: 0;
+}
+.footer{
+    background: #000;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar span{
+    font-weight: 500;
+}
+@media (min-width: 1024px) {
+    .header{
+        height: 60rem;
+    }
     .header__nav{
         display: flex;
         flex-direction: row;
@@ -110,7 +159,7 @@ img{
         color: var(--white);
         padding-top: 4rem;
     }
-    .header__nav nav{
+    .navigation{
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
@@ -119,5 +168,20 @@ img{
         color: var(--white);
         margin-top: 15rem;
         padding-inline: 2rem;
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    .btn{
+        width: fit-content;
+        padding: 10px 40px;
+    }
+    .article:last-of-type{
+        border: none;
+    }
+    .bar{
+        flex-direction: row;
     }
 }
