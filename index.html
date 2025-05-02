@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="cafe.png" type="image/x-icon">
     <title>CoffeeBlog</title>
 </head>
 <body>
-    <header class="header" id="section-1">
+    <header class="header">
         <div class="container">
             <div class="header__nav">
                 <a href="/">
@@ -27,26 +29,26 @@
             <p class="no-margin">Learn with the coffee experts</p>
         </div>
     </header>
-    <div class="container main-content" id="section-2">
+    <div class="container main-content">
         <main class="blog">
             <h3>Our Coffee</h3>
             <article class="article">
-                <img src="/img/blog1.jpg" alt="article_1">
+                <img src="/img/blog1.jpg" alt="article_1" >
                 <h4 class="article__title no-margin">Kinds of Coffee Beans</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga aliquam magni exercitationem! Nesciunt expedita distinctio voluptate id quisquam iusto minima eveniet dolore autem necessitatibus voluptas, ducimus quis sint ab!</p>
-                <a class="btn btn--primary">View article</a>
+                <a href="/entry.html" class="btn btn--primary">View article</a>
             </article>
             <article class="article">
-                <img src="/img/blog2.jpg" alt="article_2">
+                <img src="/img/blog2.jpg" alt="article_2" loading="lazy">
                 <h4 class="article__title no-margin">3 Delicious Coffee Recipes</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga aliquam magni exercitationem! Nesciunt expedita distinctio voluptate id quisquam iusto minima eveniet dolore autem necessitatibus voluptas, ducimus quis sint ab!</p>
-                <a class="btn btn--primary">View article</a>
+                <a href="/entry.html" class="btn btn--primary">View article</a>
             </article>
             <article class="article">
-                <img src="/img/blog3.jpg" alt="article_3">
+                <img src="/img/blog3.jpg" alt="article_3" loading="lazy">
                 <h4 class="article__title no-margin">Coffee Benefits</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga aliquam magni exercitationem! Nesciunt expedita distinctio voluptate id quisquam iusto minima eveniet dolore autem necessitatibus voluptas, ducimus quis sint ab!</p>
-                <a class="btn btn--primary">View article</a>
+                <a href="/entry.html" class="btn btn--primary">View article</a>
             </article>
         </main>
         <aside class="sidebar">
