@@ -4,6 +4,7 @@
     --primary: #784D3C;
     --white: #ffff;
     --black: #000;
+    --grey: #e1e1e1;
 }
 html{
     box-sizing: border-box;
@@ -107,10 +108,11 @@ img{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 10px 5px;
+    padding: 1rem 0.5rem;
     text-transform: uppercase;
     border-bottom: var(--black) 1px;
     font-weight: 700;
+    cursor: pointer;
 }
 .btn--primary{
     background: var(--black);
@@ -133,6 +135,7 @@ img{
 }
 .widget-course span{
     margin: 0;
+    font-weight: 700;
 }
 .footer{
     background: #000;
@@ -226,12 +229,45 @@ img{
     }
 }
 
+/* Entry */
+.entry__content{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2.5rem;
+}
+
 /* Contact */
 .contact__form{
     position: relative;
     top: -10rem;
     margin: 2.5rem;
-    padding: 5rem;
+    padding: 1rem;
     border-radius: 1rem;
     background-color: var(--white);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+.contact__form--input,
+.contact__form--button{
+    display: grid;
+    margin: 2rem;
+    gap: 1rem;
+}
+.contact__form--input input,
+.contact__form--input textarea{
+    height: 5rem;
+    border: 1px solid var(--grey);
+    padding-inline: 1.5rem;
+}
+.contact__form--input textarea{
+    padding-top: 1.5rem;
+    resize: vertical;
+}
+.contact__form .btn--primary{
+    color: var(--white);
+    margin-top: 1.5rem;
+}
+@media (min-width: 1024px){
+    .contact__form{
+        padding: 5rem;
+    }
 }
