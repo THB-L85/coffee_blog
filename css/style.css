@@ -61,7 +61,7 @@ img{
 /* Header */
 .header{
     background-image: url(../img/banner.jpg);
-    height: 100vh;
+    height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -89,7 +89,7 @@ img{
 }
 .header__text{
     color: var(--white);
-    margin-top: 15rem;
+    margin-top: 10rem;
     padding-inline: 2rem;
 }
 
@@ -118,7 +118,8 @@ img{
 .btn--secundary{
     background-color: var(--primary);
 }
-/* Courses */
+
+/* Courses - Home */
 .courses{
     border: #784d3c3b solid 1px;
     padding: 20px;
@@ -184,4 +185,53 @@ img{
     .bar{
         flex-direction: row;
     }
+}
+
+/* About */
+.about{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.about_text {
+    margin-bottom: 5rem;
+}
+.about_text p{
+    margin: 0;
+}
+@media (min-width: 1024px) {
+    .about{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Course */
+.course{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+.course__label{
+    font-size: 2rem;
+}
+.course__information span{
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .course{
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+/* Contact */
+.contact__form{
+    position: relative;
+    top: -10rem;
+    margin: 2.5rem;
+    padding: 5rem;
+    border-radius: 1rem;
+    background-color: var(--white);
 }
